@@ -1,0 +1,16 @@
+These code snippets are for a video I did on Youtube showing how to add a Page URL & Title to a Webflow Form. The video can be found here: https://www.youtube.com/watch?v=cumUUGkDXSE
+
+
+Page Code:
+
+<script>
+window.addEventListener("DOMContentLoaded", (event) => {
+  document.getElementById("url").value = window.location;
+  document.getElementById("page-title").value = document.title;
+});
+</script>
+
+Form Code:
+
+<input type="text" class="text-field w-input" maxlength="256" name="url" data-name="URL" id="url">
+<input type="text" class="text-field w-input" maxlength="256" name="page-title" data-name="page-title" id="page-title">
