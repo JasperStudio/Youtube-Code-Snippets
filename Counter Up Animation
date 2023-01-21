@@ -1,0 +1,14 @@
+This is the code snippet for the Counter Up Number Animation in Webflow video. Video can be found here: https://www.youtube.com/watch?v=qT3aGPJtGNM&lc=Ugy4PhE-N-36KTK0NcR4AaABAg.9kYBGS2O_Ni9kcghHWTZcI
+
+Code:
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js'></script>
+<script src='https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js'></script>
+<script>
+$('.counter').counterUp({
+ delay: 10,
+ time: 1000
+});
+$('.counter').addClass('animated fadeIn');
+</script>
