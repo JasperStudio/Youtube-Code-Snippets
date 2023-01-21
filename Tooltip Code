@@ -1,0 +1,24 @@
+This code snippet is for a video I did on how to add a Tooltip on your Webflow website. Video can be found here: https://www.youtube.com/watch?v=PJPnftjUftQ
+
+Header Code:
+
+<!--Tooltip Styling-->
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@4/themes/light-border.css"/>
+
+Body Code: 
+
+<!--Tooltip Scripts & Settings-->
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@4"></script>
+<script>
+tippy('.tooltip', {        
+ animation: 'fade',    
+ duration: 200,      
+ arrow: true,          
+ delay: [0, 50],      
+ arrowType: 'sharp',  
+ theme: 'light-border',        
+ maxWidth: 220,    
+ interactive: true,
+})
+</script>
