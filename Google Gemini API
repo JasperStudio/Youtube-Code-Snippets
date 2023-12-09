@@ -1,0 +1,23 @@
+Youtube Video Tutorial: https://youtu.be/1a6-QrmYf1M
+
+Install Library: Pip Install bardapi
+Github Link: https://github.com/dsdanielpark/Bard-API
+
+Cookie Keys Needed:
+__Secure-1PSID
+__Secure-1PSIDTS
+__Secure-1PSIDCC
+
+
+Python Code:
+
+from bardapi import BardCookies
+
+cookie_dict = {
+    "__Secure-1PSID": "xxx",
+    "__Secure-1PSIDTS": "xxx",
+    "__Secure-1PSIDCC": "xxx",
+}
+
+bard = BardCookies(cookie_dict=cookie_dict)
+print(bard.get_answer("WHAT MODEL ARE YOU USING?")['content'])
